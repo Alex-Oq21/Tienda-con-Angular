@@ -1,19 +1,5 @@
 
-<input type="text" [(ngModel)]="title">
-{{title}}
 
-<div *ngIf="title === 'Alexis'">
-  Esto es un div
-</div>
-
-<button (click)="addItems()">Agregar</button>
-<ul>
-  <label *ngIf="items.length === 0">Está vacía, ves? :'v</label>
-  <li *ngFor="let items of items; index as i">
-    {{items}} {{i}}
-    <button (click)="deleteItems(i)">Eliminar</button>
-  </li>
-</ul>
 
 <div *ngFor="let product of products">
  {{product.title}}
@@ -21,7 +7,7 @@
  {{product.price}}
 </div>
 
-
+<app-product></app-product>
 
 
 

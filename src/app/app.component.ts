@@ -12,13 +12,6 @@ export class AppComponent {
 
   products: Product[] = [
     {
-      id: '1',
-      image: 'assets/images/imagen1.jpg',
-      title: 'Chaqueta',
-      price: 80000,
-      description: ''
-    },
-    {
       id: '2',
       image: 'assets/images/imagen2.jpg',
       title: 'Conjunto',
