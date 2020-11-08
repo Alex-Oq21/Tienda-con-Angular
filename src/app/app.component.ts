@@ -12,6 +12,13 @@ export class AppComponent {
 
   products: Product[] = [
     {
+      id: '1',
+      image: 'assets/images/imagen1.jpg',
+      title: 'Chaqueta',
+      price: 80000,
+      description: ''
+    },
+    {
       id: '2',
       image: 'assets/images/imagen2.jpg',
       title: 'Conjunto',
@@ -40,5 +47,10 @@ export class AppComponent {
 
   deleteItems(index: number){
     this.items.splice(index, 1);
+  }
+
+  clickProduct(id: number){
+    console.log('product');
+    console.log(id);
   }
 }
