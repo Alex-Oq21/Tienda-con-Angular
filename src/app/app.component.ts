@@ -15,7 +15,7 @@ export class AppComponent {
       id: '1',
       image: 'assets/images/imagen1.jpg',
       title: 'Chaqueta',
-      price: 80000,
+      price:  80000,
       description: ''
     },
     {
