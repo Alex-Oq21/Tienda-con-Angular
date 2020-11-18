@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {Product} from './product.model';
+import { Product } from './product.model';
 @Injectable({
   providedIn: 'root'
 })
@@ -10,7 +10,7 @@ export class ProductsService {
       id: '1',
       image: 'assets/images/imagen1.jpg',
       title: 'Chaqueta',
-      price:  80000,
+      price: 80000,
       description: ''
     },
     {
@@ -36,12 +36,12 @@ export class ProductsService {
     },
   ];
 
-  constructor() {}
+  constructor() { }
 
-    getAllProducts(){
-      return this.products;
-    }
-    getProduct(id: string){
-      return this.products.find(item => id === item.id);
-    }  
+  getAllProducts() {
+    return this.products;
   }
+  getProduct(id: string) {
+    return this.products.find(item => id === item.id);
+  }
+}
