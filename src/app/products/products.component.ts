@@ -24,14 +24,14 @@ export class ProductsComponent implements OnInit {
     {
       id: '3',
       image: 'assets/images/imagen3.jpg',
-      title: 'Conjunto',
+      title: 'Conjunto Caballero',
       price: 80000,
       description: ''
     },
     {
       id: '4',
       image: 'assets/images/imagen4.jpg',
-      title: 'Camisa blanca',
+      title: 'Conjunto De Invierno',
       price: 80000,
       description: ''
     },
