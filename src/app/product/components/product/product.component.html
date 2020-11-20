@@ -2,5 +2,5 @@
 <img [src]="product.image" alt="">
 <strong>{{product.price |  currency}}</strong>
 <p>{{today | date}}</p>
-<button (click)="addCart()">Agregar al carrito</button>
-<a [routerLink]="['/products', product.id]"> Ver</a>
+<button (click)="addCart()" mat-raised-button color="primary">Agregar al carrito</button>
+<a [routerLink]="['/products', product.id]"  mat-raised-button> Ver</a>
