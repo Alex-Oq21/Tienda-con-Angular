@@ -1,47 +1,20 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { Product } from '../../../product.model';
+import { from } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
 export class ProductsService {
 
-  products: Product[] = [
-    {
-      id: '1',
-      image: 'assets/images/imagen1.jpg',
-      title: 'Chaqueta',
-      price: 80000,
-      description: ''
-    },
-    {
-      id: '2',
-      image: 'assets/images/imagen2.jpg',
-      title: 'Conjunto',
-      price: 80000,
-      description: ''
-    },
-    {
-      id: '3',
-      image: 'assets/images/imagen3.jpg',
-      title: 'Conjunto',
-      price: 80000,
-      description: ''
-    },
-    {
-      id: '4',
-      image: 'assets/images/imagen4.jpg',
-      title: 'Camisa blanca',
-      price: 80000,
-      description: ''
-    },
-  ];
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   getAllProducts() {
-    return this.products;
+    return this.http.get<Product[]>('ponerAPIaqui');
   }
   getProduct(id: string) {
-    return this.products.find(item => id === item.id);
+    // Usar comillas simple imvertidas ` ` y al final de la URL concatenar /{id}
+    return this.http.get('ponerAPIaqui');
   }
 }
