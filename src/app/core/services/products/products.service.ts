@@ -14,7 +14,6 @@ export class ProductsService {
     return this.http.get<Product[]>('ponerAPIaqui');
   }
   getProduct(id: string) {
-    // Usar comillas simple imvertidas ` ` y al final de la URL concatenar /{id}
-    return this.http.get('ponerAPIaqui');
+    return this.http.get<Product>(`ponerAPIaqui/{id}`);
   }
 }
